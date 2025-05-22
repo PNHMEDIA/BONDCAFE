@@ -846,7 +846,9 @@
                 <button class="lang-btn active" data-lang="cs">CZ</button>
                 <button class="lang-btn" data-lang="en">EN</button>
             </div>
+            <a href="menu.html">
             <button class="menu-btn" data-translate="menu">MENU</button>
+        </a>
         </div>
     </header>
 
@@ -858,8 +860,8 @@
             <h1 data-translate="hero-title">VYCHUTNEJTE SI RANNÍ KÁVU</h1>
             <p data-translate="hero-desc">Od roku 2010 je naše rodina na misi poskytovat udržitelnou a etickou, ručně praženou, výběrovou kávu za férovou cenu pro vás i farmáře.</p>
             <div class="btn-group">
-                <button class="btn-primary" data-translate="more-info">VÍCE INFORMACÍ</button>
-                <button class="btn-secondary"><span data-translate="reservation">REZERVACE</span> <i class="fas fa-arrow-right"></i></button>
+                <a href="menu.html"><button class="btn-primary" data-translate="more-info">MENU</button></a>
+                <a href="calL:12345678"> <button class="btn-secondary"><span data-translate="reservation">REZERVACE</span> <i class="fas fa-arrow-right"></i></button></a>
             </div>
             
             <div class="stats">
@@ -892,7 +894,7 @@
                 <div>•</div>
                 <div class="coffee-type" data-coffee="espresso">ESPRESSO</div>
             </div>
-            <button class="btn-secondary"><span data-translate="more-menu">VÍCE MENU</span> <i class="fas fa-arrow-right"></i></button>
+            <a href="menu.html"><button class="btn-secondary"><span data-translate="more-menu">CELÉ MENU</span> <i class="fas fa-arrow-right"></i></button></a>
         </div>
         <div class="coffee-img" data-aos="fade-left" data-aos-duration="1000">
             <img id="coffee-image" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Káva">
@@ -914,7 +916,7 @@
                 <div>•</div>
                 <div class="dessert-type" data-dessert="brownie">BROWNIE</div>
             </div>
-            <button class="btn-secondary"><span data-translate="more-desserts">VÍCE DEZERTŮ</span> <i class="fas fa-arrow-right"></i></button>
+            <a href="menu.html"><button class="btn-secondary"><span data-translate="more-desserts">VÍCE DEZERTŮ</span> <i class="fas fa-arrow-right"></i></button></a>
         </div>
     </section>
 
@@ -1048,8 +1050,8 @@
 
     <!-- Call to Action -->
     <section class="cta">
-        <h2 class="cta-title" data-aos="fade-up" data-aos-duration="1000" data-translate="taste-coffee">Pojďme společně ochutnat tu kávu</h2>
-        <button class="menu-btn" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300" data-translate="menu">MENU</button>
+        <a href="https://maps.app.goo.gl/dvF1HxwPkEUSfGbJ6"><h2 class="cta-title" data-aos="fade-up" data-aos-duration="1000" data-translate="taste-coffee">Pojďme společně ochutnat tu kávu</h2></a>
+    <a href="menu.html"><button class="menu-btn" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300" data-translate="menu">MENU</button></a>
     </section>
 
     <!-- Footer -->
@@ -1068,9 +1070,7 @@
             <div class="footer-nav" data-aos="fade-left" data-aos-duration="800">
                 <a href="#" data-translate="home">Domů</a>
                 <a href="#" data-translate="about">O nás</a>
-                <a href="#" data-translate="shop">Obchod</a>
-                <a href="#" data-translate="menu">Menu</a>
-                <a href="#" data-translate="blog">Blog</a>
+                
             </div>
         </div>
         
@@ -1095,7 +1095,7 @@
                 'our-coffee': 'NAŠE KÁVA',
                 'choose-coffee': 'Vyberte si svou oblíbenou kávu',
                 'coffee-desc': 'Více než 100 druhů kávy je připraveno k servírování našimi profesionály.',
-                'more-menu': 'VÍCE MENU',
+                'more-menu': 'CElÉ MENU',
                 'our-desserts': 'NAŠE DEZERTY',
                 'complete-coffee': 'Doplňte svou kávu našimi dezerty',
                 'more-desserts': 'VÍCE DEZERTŮ',
@@ -1208,13 +1208,7 @@
             });
         });
         
-        // Simple script to handle menu button functionality
-        document.querySelectorAll('.menu-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const menuText = currentLang === 'cs' ? 'Funkce menu by byla implementována zde' : 'Menu functionality would be implemented here';
-                alert(menuText);
-            });
-        });
+        
         
         // Add button functionality
        
